@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: fable-iot
+  host: fable-iot
+  disk_quota: 1024M
+  services:
+  - fable-iot-cloudantNoSQLDB
+  - fable-iot-iotf-service
+  - availability-monitoring-auto
